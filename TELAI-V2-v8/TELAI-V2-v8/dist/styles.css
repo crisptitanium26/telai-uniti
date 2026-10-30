@@ -1134,3 +1134,6 @@ a.member:hover .member-arrow,
 a.member:focus-visible .member-arrow {
   color:#fff;
 }
+
+/* V3: blend the supplied JPEG's white background into the header. */
+.header-logo { mix-blend-mode: multiply; }
