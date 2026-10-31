@@ -1137,3 +1137,18 @@ a.member:focus-visible .member-arrow {
 
 /* V3.2: the logo asset now supplies its own transparency. */
 .header-logo { mix-blend-mode: normal; }
+
+/* Mobile navigation: keep the fixed menu relative to the viewport on iOS. */
+@media (max-width: 960px) {
+  .site-header { -webkit-backdrop-filter:none; backdrop-filter:none; }
+  .primary-navigation {
+    flex-direction:column;
+    flex-wrap:nowrap;
+    width:100%;
+    height:100vh;
+    height:100dvh;
+    overflow-y:auto;
+    align-items:flex-start;
+  }
+  .primary-navigation a { flex:0 0 auto; }
+}
